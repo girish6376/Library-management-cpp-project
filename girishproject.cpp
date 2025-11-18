@@ -84,7 +84,7 @@ public:
         this->status = s;
     }
 
-    string getStatus() const {      // ✅ getter for protected member
+    string getStatus() const {      
         return status;
     }
 
@@ -244,7 +244,7 @@ int main() {
                 for (int i = 0; i < count; i++) {
                     fout << books[i]->bookId << "," << books[i]->title << ","
                          << books[i]->author << "," << books[i]->copies << ","
-                         << books[i]->getStatus() << endl;   // ✅ fixed here
+                         << books[i]->getStatus() << endl;   
                 }
                 fout.close();
                 cout << "Books saved to file.\n";
@@ -280,3 +280,4 @@ int main() {
 
     return 0;
 }
+
